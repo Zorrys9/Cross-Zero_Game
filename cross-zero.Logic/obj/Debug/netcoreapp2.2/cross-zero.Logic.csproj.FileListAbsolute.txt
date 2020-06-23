@@ -1,0 +1,16 @@
+C:\Users\sasch\source\repos\cross-zero\cross-zero.Logic\bin\Debug\netcoreapp2.2\cross-zero.Logic.deps.json
+C:\Users\sasch\source\repos\cross-zero\cross-zero.Logic\bin\Debug\netcoreapp2.2\cross-zero.Logic.dll
+C:\Users\sasch\source\repos\cross-zero\cross-zero.Logic\bin\Debug\netcoreapp2.2\cross-zero.Logic.pdb
+C:\Users\sasch\source\repos\cross-zero\cross-zero.Logic\bin\Debug\netcoreapp2.2\cross-zero.Common.dll
+C:\Users\sasch\source\repos\cross-zero\cross-zero.Logic\bin\Debug\netcoreapp2.2\cross-zero.Data.dll
+C:\Users\sasch\source\repos\cross-zero\cross-zero.Logic\bin\Debug\netcoreapp2.2\cross-zero.Services.dll
+C:\Users\sasch\source\repos\cross-zero\cross-zero.Logic\bin\Debug\netcoreapp2.2\cross-zero.Common.pdb
+C:\Users\sasch\source\repos\cross-zero\cross-zero.Logic\bin\Debug\netcoreapp2.2\cross-zero.Services.pdb
+C:\Users\sasch\source\repos\cross-zero\cross-zero.Logic\bin\Debug\netcoreapp2.2\cross-zero.Data.pdb
+C:\Users\sasch\source\repos\cross-zero\cross-zero.Logic\obj\Debug\netcoreapp2.2\cross-zero.Logic.csprojAssemblyReference.cache
+C:\Users\sasch\source\repos\cross-zero\cross-zero.Logic\obj\Debug\netcoreapp2.2\cross-zero.Logic.csproj.CoreCompileInputs.cache
+C:\Users\sasch\source\repos\cross-zero\cross-zero.Logic\obj\Debug\netcoreapp2.2\cross-zero.Logic.AssemblyInfoInputs.cache
+C:\Users\sasch\source\repos\cross-zero\cross-zero.Logic\obj\Debug\netcoreapp2.2\cross-zero.Logic.AssemblyInfo.cs
+C:\Users\sasch\source\repos\cross-zero\cross-zero.Logic\obj\Debug\netcoreapp2.2\cross-zero.Logic.csproj.CopyComplete
+C:\Users\sasch\source\repos\cross-zero\cross-zero.Logic\obj\Debug\netcoreapp2.2\cross-zero.Logic.dll
+C:\Users\sasch\source\repos\cross-zero\cross-zero.Logic\obj\Debug\netcoreapp2.2\cross-zero.Logic.pdb

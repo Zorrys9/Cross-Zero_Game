@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewData["Title"] = "LogIn";
+}
+
+<h1>LogIn</h1>
+<br /><br /><br />
+
+<div class="container">
+    <form action="LogIn" method="post">
+        <label>UserName</label>
+        <input type="text" id="userName" name="UserName" class="form-control" />
+
+        <label>Password</label>
+        <input type="password" id="password" name="Password" class="form-control" />
+
+        <label>RememberMe</label>
+        <input type="checkbox" id="remember" name="RememberMe" value="false" />
+
+        <br />
+        <input class="btn btn-primary" type="submit" value="LogIn"/>
+        <a class="btn btn-link float-right" asp-action="Registration" asp-controller="Account">Registration</a>
+    </form>
+</div>
+
+
+<script type="text/javascript">
+
+    $("#remember").click(function () {
+
+        var value = $('#remember').val();
+
+        if (value == "true") {
+
+            $('#remember').val("false");
+
+        }
+        else {
+
+            $('#remember').val("true");
+
+        }
+
+    })
+
+
+</script>

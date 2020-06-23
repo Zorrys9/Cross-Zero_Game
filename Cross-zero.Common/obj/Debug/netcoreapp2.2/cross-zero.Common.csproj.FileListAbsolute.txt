@@ -1,0 +1,9 @@
+C:\Users\sasch\source\repos\cross-zero\Cross-zero.Common\bin\Debug\netcoreapp2.2\cross-zero.Common.deps.json
+C:\Users\sasch\source\repos\cross-zero\Cross-zero.Common\bin\Debug\netcoreapp2.2\cross-zero.Common.dll
+C:\Users\sasch\source\repos\cross-zero\Cross-zero.Common\bin\Debug\netcoreapp2.2\cross-zero.Common.pdb
+C:\Users\sasch\source\repos\cross-zero\Cross-zero.Common\obj\Debug\netcoreapp2.2\cross-zero.Common.csprojAssemblyReference.cache
+C:\Users\sasch\source\repos\cross-zero\Cross-zero.Common\obj\Debug\netcoreapp2.2\cross-zero.Common.csproj.CoreCompileInputs.cache
+C:\Users\sasch\source\repos\cross-zero\Cross-zero.Common\obj\Debug\netcoreapp2.2\cross-zero.Common.AssemblyInfoInputs.cache
+C:\Users\sasch\source\repos\cross-zero\Cross-zero.Common\obj\Debug\netcoreapp2.2\cross-zero.Common.AssemblyInfo.cs
+C:\Users\sasch\source\repos\cross-zero\Cross-zero.Common\obj\Debug\netcoreapp2.2\cross-zero.Common.dll
+C:\Users\sasch\source\repos\cross-zero\Cross-zero.Common\obj\Debug\netcoreapp2.2\cross-zero.Common.pdb

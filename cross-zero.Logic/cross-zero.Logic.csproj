@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <RootNamespace>cross_zero.Logic</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cross-zero.Common\cross-zero.Common.csproj" />
+    <ProjectReference Include="..\cross-zero.Services\cross-zero.Services.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,14 @@
+C:\Users\sasch\source\repos\cross-zero\cross-zero.Services\bin\Debug\netcoreapp2.2\cross-zero.Common.dll
+C:\Users\sasch\source\repos\cross-zero\cross-zero.Services\bin\Debug\netcoreapp2.2\cross-zero.Data.dll
+C:\Users\sasch\source\repos\cross-zero\cross-zero.Services\obj\Debug\netcoreapp2.2\cross-zero.Services.csprojAssemblyReference.cache
+C:\Users\sasch\source\repos\cross-zero\cross-zero.Services\obj\Debug\netcoreapp2.2\cross-zero.Services.AssemblyInfoInputs.cache
+C:\Users\sasch\source\repos\cross-zero\cross-zero.Services\obj\Debug\netcoreapp2.2\cross-zero.Services.AssemblyInfo.cs
+C:\Users\sasch\source\repos\cross-zero\cross-zero.Services\bin\Debug\netcoreapp2.2\cross-zero.Services.deps.json
+C:\Users\sasch\source\repos\cross-zero\cross-zero.Services\bin\Debug\netcoreapp2.2\cross-zero.Services.dll
+C:\Users\sasch\source\repos\cross-zero\cross-zero.Services\bin\Debug\netcoreapp2.2\cross-zero.Services.pdb
+C:\Users\sasch\source\repos\cross-zero\cross-zero.Services\bin\Debug\netcoreapp2.2\cross-zero.Common.pdb
+C:\Users\sasch\source\repos\cross-zero\cross-zero.Services\bin\Debug\netcoreapp2.2\cross-zero.Data.pdb
+C:\Users\sasch\source\repos\cross-zero\cross-zero.Services\obj\Debug\netcoreapp2.2\cross-zero.Services.csproj.CoreCompileInputs.cache
+C:\Users\sasch\source\repos\cross-zero\cross-zero.Services\obj\Debug\netcoreapp2.2\cross-zero.Services.csproj.CopyComplete
+C:\Users\sasch\source\repos\cross-zero\cross-zero.Services\obj\Debug\netcoreapp2.2\cross-zero.Services.dll
+C:\Users\sasch\source\repos\cross-zero\cross-zero.Services\obj\Debug\netcoreapp2.2\cross-zero.Services.pdb

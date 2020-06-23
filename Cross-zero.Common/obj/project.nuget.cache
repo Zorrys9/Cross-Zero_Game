@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "4GU8Iv93ab4ueVj2eRewCqDqcfS4Wtv2prd9BU1FuaJZXyOGjN501ycOKcrTeJDES+e6x6qfgREQTizySNN8vQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sasch\\source\\repos\\cross-zero\\Cross-zero.Common\\cross-zero.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sasch\\.nuget\\packages\\microsoft.netcore.app\\2.2.0\\microsoft.netcore.app.2.2.0.nupkg.sha512",
+    "C:\\Users\\sasch\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.2.0\\microsoft.netcore.dotnetapphost.2.2.0.nupkg.sha512",
+    "C:\\Users\\sasch\\.nuget\\packages\\microsoft.netcore.dotnethostpolicy\\2.2.0\\microsoft.netcore.dotnethostpolicy.2.2.0.nupkg.sha512",
+    "C:\\Users\\sasch\\.nuget\\packages\\microsoft.netcore.dotnethostresolver\\2.2.0\\microsoft.netcore.dotnethostresolver.2.2.0.nupkg.sha512",
+    "C:\\Users\\sasch\\.nuget\\packages\\microsoft.netcore.platforms\\2.2.0\\microsoft.netcore.platforms.2.2.0.nupkg.sha512",
+    "C:\\Users\\sasch\\.nuget\\packages\\microsoft.netcore.targets\\2.0.0\\microsoft.netcore.targets.2.0.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

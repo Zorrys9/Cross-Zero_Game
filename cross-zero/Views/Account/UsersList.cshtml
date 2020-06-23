@@ -1,0 +1,117 @@
+﻿@model Cross_zero.Common.ViewModels.UsersListViewModel;
+@{
+    ViewData["Title"] = "UsersList";
+}
+
+
+<div class="float-left">Добро пожаловать <span id="thisuser">@Model.CurrentUser.UserName</span>, Ваша статистика @Model.CurrentUser.CountGames игр (@Model.CurrentUser.Victory побед : @Model.CurrentUser.Lose поражений)</div>
+<button class="btn btn-dark ml-5 float-right" id="exit">Exit</button>
+<br />
+<br />
+@if (Model.UsersList != null && Model.UsersList.Count != 0)
+{
+
+    <table class="table table-active text-center">
+        <thead>
+            <tr>
+                <td>UserName</td>
+                <td>Count Games</td>
+                <td>Statistic<br /> (win : lose)</td>
+                <td>Count games with you</td>
+                <td>Statistic with you<br /> (win : lose)</td>
+            </tr>
+        </thead>
+        <tbody>
+            @for (var i = 0; i < Model.UsersList.Count; i++)
+            {
+                var user = Model.UsersList[i];
+                <tr>
+                    <td id="@("username"+i)">@user.UserName</td>
+                    <td>@user.CountGames</td>
+                    <td>@user.Victory : @user.Lose</td>
+                    <td>@user.CountGamesWithCurrentUser</td>
+                    <td id="@("statistic"+i)">@user.CountVictoryWithCurrentUser : @user.CountLoseWithCurrentUser</td>
+                    <td><input type="hidden" id='@("user"+i)' /><button class="btn btn-primary play" id="@i">Play</button></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+}
+
+<div id="WaitModal" class="modal fade">
+    <div class="modal-dialog" role="document">
+
+        <div class="modal-content">
+            <h4 class="modal-title hidden" > </h4>
+            <div class="modal-header">
+                <h4 class="modal-title" > Wait for user's response</h4>
+            </div>
+            <br />
+            <input type="hidden" id="waitingUser" value=""/>
+            <button id="CancelBut" type="button" class="btn btn-primary"> Cancel </button>
+        </div>
+    </div>
+</div>
+
+<div id="ChallengeModal" class="modal fade">
+    <div class="modal-dialog" role="document">
+
+        <div class="modal-content">
+            <h4 class="modal-title hidden"></h4>
+            <div class="modal-header">
+                <h4 class="modal-title" id="challengeH"></h4>
+            </div>
+            <br />
+            <div class="btnBox">
+                <button id="PlayBut" type="button" class="btn btn-primary"> Play </button>
+                <button id="DenyBut" type="button" class="btn btn-primary"> Deny </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="ResponseModal" class="modal fade">
+    <div class="modal-dialog" role="document">
+
+        <div class="modal-content">
+            <h4 class="modal-title hidden"></h4>
+            <div class="modal-header">
+                <h4 class="modal-title" id="responseH"></h4>
+            </div>
+            <br />
+            <div class="btnBox">
+                <button id="OkBut" type="button" class="btn btn-primary"> Ok </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="~/js/CallHub.js"></script>
+
+<script type="text/javascript">
+
+    var currentUser = $("#thisuser").html();
+    $("#exit").click(function () {
+
+        $.ajax({
+            type: "POST",
+            url: "LogOut",
+            success: function () {
+
+                location.pathname = "Account/LogIn";
+
+            },
+            error: function (error) {
+
+                alert(error.responseText);
+
+            }
+
+        })
+    });
+
+    
+
+</script>

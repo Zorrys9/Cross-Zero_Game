@@ -1,0 +1,53 @@
+﻿@model Cross_zero.Common.ViewModels.GameViewModel;
+@{
+    ViewData["Title"] = "Game";
+}
+
+<h1 class="text-center">Game</h1>
+<br />
+
+            <div class="container">
+                <div class="infoUsers">
+                    @{
+
+                        var user = Context.User.Identity.Name;
+
+                        if (user == Model.UserNameOne)
+                        {
+                            <input type="hidden" id="figureUser" value="@Model.FigureOne" />
+                            <input type="hidden" id="figureEnemy" value="@Model.FigureTwo" />
+                            <div id="userFigure" class="@(Model.FigureOne)"></div>
+                            <h3 class="text-center"><u id="user">@Model.UserNameOne </u><b>&ensp;&ensp;&ensp; VS &ensp;&ensp;&ensp;</b> <span id="enemy">@Model.UserNameTwo</span></h3>
+                            <div id="enemyFigure" class="@(Model.FigureTwo)"></div>
+                        }
+                        else
+                        {
+                            <input type="hidden" id="figureUser" value="@Model.FigureTwo" />
+                            <input type="hidden" id="figureEnemy" value="@Model.FigureOne" />
+                            <div id="userFigure" class="@(Model.FigureTwo)"></div>
+                            <h3 class="text-center"><u id="user">@Model.UserNameTwo </u><b>&ensp;&ensp;&ensp; VS &ensp;&ensp;&ensp;</b> <span id="enemy">@Model.UserNameOne</span></h3>
+                            <div id="enemyFigure" class="@(Model.FigureOne)"></div>
+                        }
+                    }
+                </div>
+
+
+
+                <div class="gameBox">
+
+                    <div class="gameCell" id="11"></div>
+                    <div class="gameCell middleVerticalCell" id="12"></div>
+                    <div class="gameCell" id="13"></div>
+
+                    <div class="gameCell middleGorizontCell" id="21"></div>
+                    <div class="gameCell centerCell" id="22"></div>
+                    <div class="gameCell middleGorizontCell" id="23"></div>
+
+                    <div class="gameCell" id="31"></div>
+                    <div class="gameCell middleVerticalCell" id="32"></div>
+                    <div class="gameCell" id="33"></div>
+
+                </div>
+
+            </div>
+<script type="text/javascript" src="~/js/GameHub.js"></script>

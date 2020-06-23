@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <RootNamespace>cross_zero.Services</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cross-zero.Common\cross-zero.Common.csproj" />
+    <ProjectReference Include="..\cross-zero.Data\cross-zero.Data.csproj" />
+  </ItemGroup>
+
+</Project>
