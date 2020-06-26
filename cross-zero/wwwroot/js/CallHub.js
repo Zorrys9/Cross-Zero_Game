@@ -58,6 +58,9 @@ $("#PlayBut").click(function () {
 
     var to = $("#challengeUser").html().trim();
 
+    hubConnection.invoke("Play", { to: to, from: currentUser });
+    location.pathname = "Game/" + currentUser + "/" + to;
+
     $.ajax({
         type: "POST",
         url: "/CreateGame",

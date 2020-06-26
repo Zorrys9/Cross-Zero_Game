@@ -7,9 +7,9 @@ namespace Cross_zero.Common.Enums
     public enum ResultGame
     {
 
-        VictoryUserOne,
-        VictoryUserTwo,
-        None
+        VictoryUserOne = 0,
+        VictoryUserTwo = 1,
+        None = 2
 
     }
 }

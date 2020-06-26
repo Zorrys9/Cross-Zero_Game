@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Cross_zero.Common.Enums;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.SignalR;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,13 @@ namespace cross_zero.Hubs
         {
 
             await Clients.User(to).SendAsync("Move", position);
+
+        }
+
+        public async Task EndGame(string to, string result)
+        {
+
+            await Clients.User(to).SendAsync("EndGame", result);
 
         }
 

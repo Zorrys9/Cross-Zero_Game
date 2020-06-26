@@ -35,6 +35,15 @@ namespace cross_zero.Logic.Logics.Implementations
 
         }
 
+        public async Task EndGame(GameViewModel model)
+        {
+
+            model.UserOne = await _userService.GetUserId(model.UserNameOne);
+            model.UserTwo = await _userService.GetUserId(model.UserNameTwo);
+
+            _gameService.Update(model);
+        }
+
         public async Task<GameViewModel> GetGame(GameViewModel model)
         {
         

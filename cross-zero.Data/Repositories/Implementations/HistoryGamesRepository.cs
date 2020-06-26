@@ -29,7 +29,12 @@ namespace cross_zero.Data.Repositories.Implementations
         public HistoryGamesEntityModel Update(HistoryGamesEntityModel model)
         {
 
-            _gameContext.Update(model);
+            var game = GetGame(model);
+
+            game.UserOne = model.UserOne;
+            game.UserTwo = model.UserTwo;
+
+            game.Result = model.Result;
 
             _gameContext.SaveChanges();
 

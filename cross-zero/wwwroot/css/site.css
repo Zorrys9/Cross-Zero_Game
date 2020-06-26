@@ -280,3 +280,6 @@ pointer-events: none;
 .infoUsers {
     width: 100%;
 }
+.cellDisabled {
+    pointer-events: none;
+}

@@ -6,48 +6,90 @@
 <h1 class="text-center">Game</h1>
 <br />
 
-            <div class="container">
-                <div class="infoUsers">
-                    @{
+<div class="container">
+    <div class="infoUsers">
+        @{
 
-                        var user = Context.User.Identity.Name;
+            var user = Context.User.Identity.Name;
 
-                        if (user == Model.UserNameOne)
-                        {
-                            <input type="hidden" id="figureUser" value="@Model.FigureOne" />
-                            <input type="hidden" id="figureEnemy" value="@Model.FigureTwo" />
-                            <div id="userFigure" class="@(Model.FigureOne)"></div>
-                            <h3 class="text-center"><u id="user">@Model.UserNameOne </u><b>&ensp;&ensp;&ensp; VS &ensp;&ensp;&ensp;</b> <span id="enemy">@Model.UserNameTwo</span></h3>
-                            <div id="enemyFigure" class="@(Model.FigureTwo)"></div>
-                        }
-                        else
-                        {
-                            <input type="hidden" id="figureUser" value="@Model.FigureTwo" />
-                            <input type="hidden" id="figureEnemy" value="@Model.FigureOne" />
-                            <div id="userFigure" class="@(Model.FigureTwo)"></div>
-                            <h3 class="text-center"><u id="user">@Model.UserNameTwo </u><b>&ensp;&ensp;&ensp; VS &ensp;&ensp;&ensp;</b> <span id="enemy">@Model.UserNameOne</span></h3>
-                            <div id="enemyFigure" class="@(Model.FigureOne)"></div>
-                        }
-                    }
-                </div>
+            if (user == Model.UserNameOne)
+            {
+                <input type="hidden" id="figureUser" value="@Model.FigureOne" />
+                <input type="hidden" id="figureEnemy" value="@Model.FigureTwo" />
+                <div id="userFigure" class="@(Model.FigureOne)"></div>
+                <h3 class="text-center"><u id="user">@Model.UserNameOne </u><b>&ensp;&ensp;&ensp; VS &ensp;&ensp;&ensp;</b> <span id="enemy">@Model.UserNameTwo</span></h3>
+                <div id="enemyFigure" class="@(Model.FigureTwo)"></div>
 
+            }
+            else
+            {
+                <input type="hidden" id="figureUser" value="@Model.FigureTwo" />
+                <input type="hidden" id="figureEnemy" value="@Model.FigureOne" />
+                <div id="userFigure" class="@(Model.FigureTwo)"></div>
+                <h3 class="text-center"><u id="user">@Model.UserNameTwo </u><b>&ensp;&ensp;&ensp; VS &ensp;&ensp;&ensp;</b> <span id="enemy">@Model.UserNameOne</span></h3>
+                <div id="enemyFigure" class="@(Model.FigureOne)"></div>
+            }
 
+            <input type="hidden" id="move" />
 
-                <div class="gameBox">
+        }
+    </div>
 
-                    <div class="gameCell" id="11"></div>
-                    <div class="gameCell middleVerticalCell" id="12"></div>
-                    <div class="gameCell" id="13"></div>
+    <br />
 
-                    <div class="gameCell middleGorizontCell" id="21"></div>
-                    <div class="gameCell centerCell" id="22"></div>
-                    <div class="gameCell middleGorizontCell" id="23"></div>
+    <div id="timer" style="font-size:20px;    margin-left: 44%;">
+        <p id="moveUser" class="float-left" ></p><span id="my_timer" style="font-weight: bold;">01:00</span>
+    </div>
 
-                    <div class="gameCell" id="31"></div>
-                    <div class="gameCell middleVerticalCell" id="32"></div>
-                    <div class="gameCell" id="33"></div>
+    <br />
 
-                </div>
+    <div class="gameBox">
 
-            </div>
+        <div class="gameCell" id="11"></div>
+        <div class="gameCell middleVerticalCell" id="12"></div>
+        <div class="gameCell" id="13"></div>
+
+        <div class="gameCell middleGorizontCell" id="21"></div>
+        <div class="gameCell centerCell" id="22"></div>
+        <div class="gameCell middleGorizontCell" id="23"></div>
+
+        <div class="gameCell" id="31"></div>
+        <div class="gameCell middleVerticalCell" id="32"></div>
+        <div class="gameCell" id="33"></div>
+
+    </div>
+
+</div>
 <script type="text/javascript" src="~/js/GameHub.js"></script>
+<script type="text/javascript">
+
+    $(document.body).ready(function () {
+
+        if ($('#figureUser').val() == "cross") {
+
+            $('#move').val("user");
+            $('#moveUser').append("You move : ");
+
+
+        }
+        else {
+
+            $('#move').val("enemy");
+            $('#moveUser').append("Enemy move : ");
+
+            var cells = $('.gameCell');
+
+            for (var i = 0; i < cells.length; i++) {
+
+                cells[i].classList.add('cellDisabled');
+
+            }
+
+
+        }
+
+        startTimer();
+
+    });
+
+</script>

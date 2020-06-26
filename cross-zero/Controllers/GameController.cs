@@ -68,5 +68,25 @@ namespace cross_zero.Controllers
             }
         }
 
+        [HttpPost("[action]")]
+        [Authorize]
+        public async Task<IActionResult> EndGame([FromForm] GameViewModel model)
+        {
+            try 
+            {
+
+                await _gameLogic.EndGame(model);
+
+                return Ok();
+            
+            }
+            catch(Exception ex)
+            {
+
+                return BadRequest(ex.Message);
+
+            }
+        }
+
     }
 }

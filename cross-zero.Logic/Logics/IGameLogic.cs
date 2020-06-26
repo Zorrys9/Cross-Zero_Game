@@ -12,5 +12,7 @@ namespace cross_zero.Logic.Logics
         Task<GameViewModel> GetGame(GameViewModel model);
 
         Task CreateGame(GameViewModel model);
+
+        Task EndGame(GameViewModel model);
     }
 }
